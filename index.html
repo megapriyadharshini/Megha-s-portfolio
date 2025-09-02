@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Priya Tharshini M - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #ff6ec4, #7873f5, #42e695, #ff9a9e, #fad0c4);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      min-height: 100vh;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 25px;
+      text-align: center;
+      border-bottom: 3px solid #ffeb3b;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffeb3b;
+      text-shadow: 2px 2px #000;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 8px;
+      color: #f1f1f1;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px 18px;
+      background: #ff4081;
+      color: white;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.4s;
+    }
+    nav a:hover {
+      background: #00e676;
+      transform: scale(1.1);
+    }
+    .container {
+      padding: 50px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .container h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #ffeb3b;
+      text-shadow: 1px 1px #333;
+    }
+    .info {
+      margin: 15px 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card {
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.5);
+      transition: transform 0.4s, background 0.4s;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: rgba(255, 64, 129, 0.9);
+    }
+    footer {
+      background: rgba(0,0,0,0.8);
+      padding: 18px;
+      text-align: center;
+      font-weight: bold;
+      color: #ffeb3b;
+      margin-top: 40px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mega Priya Tharshini M</h1>
+    <p>AIML Student | KPRCAS</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <section id="home" class="container">
+    <h2>Welcome to My Portfolio</h2>
+    <p class="info">Hi, I'm <b>Mega Priya Tharshini M</b>, an AIML student from KPRCAS. Passionate about Artificial Intelligence and Machine Learning, I enjoy creating innovative projects and exploring new technologies.</p>
+    <p class="info">My dream is to contribute to AI-driven solutions that make life easier and smarter.</p>
+  </section>
+
+  <!-- Projects Page -->
+  <section id="projects" class="container">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Smart Cities</h3>
+        <p>Designing technology-driven smart solutions for sustainable and efficient city living.</p>
+      </div>
+      <div class="card">
+        <h3>Library Management</h3>
+        <p>A digital management system to handle book records, student data, and transactions seamlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Page -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p class="info">📧 Email: <b>megapriyadharshini12@gmail.com</b></p>
+    <p class="info">📞 Phone: <b>6379933457</b></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Mega Priya Tharshini M | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
